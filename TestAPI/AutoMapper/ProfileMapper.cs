@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using TestAPI.Dto.Staff;
+using TestAPI.Models;
 
 namespace TestAPI.AutoMapper
 {
@@ -10,6 +12,7 @@ namespace TestAPI.AutoMapper
     {
         public static void Configure()
         {
+            Mapper.CreateMap<Staff, StaffDto>().ReverseMap();
         }
     }
 }

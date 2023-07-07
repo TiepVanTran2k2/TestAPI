@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using TestAPI.Dto.Staff;
 using TestAPI.EntityFramework;
 using TestAPI.Models;
 
@@ -23,15 +25,15 @@ namespace TestAPI.Controllers
             }
             return result;
         }
-        public async Task<Staff> Post([FromBody] Staff staff)
+        public async Task<StaffDto> Post([FromBody] StaffDto input)
         {
-            var result = new Staff();
             using(var db = new AppDbContext())
             {
+                var staff = Mapper.Map<Staff>(input);
                 db.Staff.Add(staff);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
             }
-            return result;
+            return input;
         }
     }
 }
