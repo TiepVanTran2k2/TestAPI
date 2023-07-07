@@ -13,6 +13,7 @@ namespace TestAPI.AutoMapper
         public static void Configure()
         {
             Mapper.CreateMap<Staff, StaffDto>().ReverseMap();
+            Mapper.CreateMap<Staff, StaffUpdateDto>().ReverseMap();
         }
     }
 }

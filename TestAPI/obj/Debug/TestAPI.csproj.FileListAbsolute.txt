@@ -188,3 +188,6 @@ C:\TestAPI\TestAPI\obj\Debug\TestAPI.csproj.CoreCompileInputs.cache
 C:\TestAPI\TestAPI\obj\Debug\TestAPI.csproj.CopyComplete
 C:\TestAPI\TestAPI\obj\Debug\TestAPI.dll
 C:\TestAPI\TestAPI\obj\Debug\TestAPI.pdb
+C:\TestAPI\TestAPI\bin\System.Web.Cors.dll
+C:\TestAPI\TestAPI\bin\System.Web.Http.Cors.dll
+C:\TestAPI\TestAPI\bin\System.Web.Http.Cors.xml

@@ -10,4 +10,10 @@ namespace TestAPI.Dto.Staff
         public string FullName { get; set; }
         public string ShortName { get; set; }
     }
+    public class StaffUpdateDto
+    {
+        public int Id { get; set; }
+        public string FullName { get; set; }
+        public string ShortName { get; set; }
+    }
 }
