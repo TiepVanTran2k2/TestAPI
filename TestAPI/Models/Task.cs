@@ -7,7 +7,7 @@ namespace TestAPI.Models
 {
     public class Task : BaseEntity
     {
-        public int IDparent { get; set; }
+        public int? IDparent { get; set; }
         public string Label { get; set; }
         public string Type { get; set; }
         public string Name { get; set; }
