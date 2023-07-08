@@ -80,7 +80,7 @@ namespace TestAPI.Controllers
                 }
                 db.Task.Remove(task); 
                 await db.SaveChangesAsync();
-                return true
+                return true;
             }
         }
     }
