@@ -191,3 +191,4 @@ C:\TestAPI\TestAPI\obj\Debug\TestAPI.pdb
 C:\TestAPI\TestAPI\bin\System.Web.Cors.dll
 C:\TestAPI\TestAPI\bin\System.Web.Http.Cors.dll
 C:\TestAPI\TestAPI\bin\System.Web.Http.Cors.xml
+C:\TestAPI\TestAPI\obj\Debug\TestAPI.Migrations.v3.resources
