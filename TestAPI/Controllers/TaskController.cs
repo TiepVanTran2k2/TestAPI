@@ -36,6 +36,14 @@ namespace TestAPI.Controllers
         {
             using (var db = new AppDbContext()) 
             {
+                if(input.IDparent != null)
+                {
+                    var childTask  = await db.Task.FindAsync(input.IDparent);
+                    if(childTask == null)
+                    {
+                        return new TaskCreateDto();
+                    }
+                }
                 var data = Mapper.Map<TestAPI.Models.Task>(input);
                 db.Task.Add(data);
                 await db.SaveChangesAsync();
